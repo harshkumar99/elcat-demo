@@ -1,0 +1,9 @@
+appName: node-app
+ns: eclat
+
+imageName: demo-node
+imageTag: "2"
+
+service: ClusterIP
+
+host: hello-test.internal
