@@ -1,0 +1,21 @@
+Steps Followed:
+1. Setup Docker with help of Docker Desktop in Windows.
+2. Enabled Kubernetes in Docker Desktop.
+3. Setup Helm in powershell.
+4. Created a nodejs example program and Dockerised, build and run it.
+5. Setup ingress controller in Kubernetes.
+6. Created Helm chart for the app and installed it in Kubernetes.
+7. Used internal host ingress rule and updated in /etc/host file to check ingress use.
+8. Make a change in Nodejs application and updated the helm chart.
+9. Rollback the changes to old version of chart.
+
+Challenges:
+1. Faced challenge in upgrading the chart as I was upgrading without providing values.yaml file path.
+2. Faced issue in configuring ingress rule.
+3. Got confused in port and target port terms of services.
+
+Explaination for Prod setup:
+1. I would use more variables for better controll.
+2. I would use condition in manifest file for specific requirements.
+3. I would use resource limits and probes.
+4. Using HPA will increase the scalability and availability.
